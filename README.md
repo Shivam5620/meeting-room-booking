@@ -149,4 +149,5 @@ No ready-made scheduling/conflict library is used. The uploaded assignment was t
 
 Prepared with AI assistance at the user's request on 2026-10-13. The user stated that AI assistance is allowed. The supplied PDF contains a contrary no-AI rule; permission has not been independently verified. Its requested no-AI declaration is therefore **not signed or included as a claim**. This delivery does not certify independent authorship or compliance with the three-hour time box. Review, understand and test the code, and disclose assistance under the actual agreed submission rules.
 #   m e e t i n g - r o o m - b o o k i n g  
+ #   m e e t i n g - r o o m - b o o k i n g  
  

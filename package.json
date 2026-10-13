@@ -1,0 +1,14 @@
+{
+  "name": "meeting-room-booking", "version": "0.8.5", "private": true,
+  "workspaces": ["backend", "frontend"],
+  "engines": {"node": ">=22.12.0"},
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "db:setup": "npm run db:setup -w backend",
+    "test": "npm run test -w backend",
+    "test:unit": "npm run test:unit -w backend",
+    "typecheck": "npm run typecheck -w backend && npm run typecheck -w frontend",
+    "build": "npm run build -w backend && npm run build -w frontend"
+  },
+  "devDependencies": {"concurrently": "9.2.1"}
+}

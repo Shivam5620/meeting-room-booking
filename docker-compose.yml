@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: booking
+      POSTGRES_PASSWORD: booking_local
+      POSTGRES_DB: meeting_rooms
+    ports:
+      - "5432:5432"
+    volumes:
+      - booking_pgdata:/var/lib/postgresql/data
+      - ./backend/src/db/init-test.sql:/docker-entrypoint-initdb.d/02-test.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U booking -d meeting_rooms"]
+      interval: 3s
+      timeout: 3s
+      retries: 15
+volumes:
+  booking_pgdata:
